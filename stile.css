@@ -1,0 +1,402 @@
+/*fonts*/
+.fonts{
+font-family: "Albert Sans", sans-serif;
+
+}
+*{margin: 0; 
+    padding: 0;
+box-sizing: border-box;
+}
+
+/* index.html*/
+nav a{text-decoration: none;
+color: white;}
+header nav{font-size: 18px;background-color: black;}
+.logo{width: 70px;height: 70px;}
+.imagen1{ width: 100%;height: 100%;}
+.imagenlink{
+    width: 40px; height: 40px; list-style: none;
+    }
+    .sinpuntos{ list-style-type: none;
+     padding-left: 0%; 
+     display: flex; 
+      gap: 4px;
+    flex-direction: row;
+align-items: center;
+font-family: "Albert Sans", sans-serif;
+text-decoration: none;
+font-weight: bold;
+}
+body{
+     min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.lugarimagen1{ display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    width: fit-content;
+    
+}
+.lugarimagen1 h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%,-50%) rotate(-30deg); 
+    font-size: 20px;
+   font-family: "Shadows Into Light", cursive;
+  font-weight: 200;
+  font-style: normal;
+    text-align: center;
+}
+.gridcontenido{
+    display: grid;
+    grid-template-areas:
+    "trece trece"
+    "hacemos textohacemos"
+    "trabajamos esquema"
+    "ayudarte textoayudarte";
+    grid-template-columns: 45% 45%;
+    margin-bottom: 20px;
+
+}
+.gridcontenido img{
+     width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.trecestudio{
+    grid-area: trece;
+    margin-bottom: 15px;
+    margin-top: 8px;
+} 
+.trecestudio{
+    display: flex;
+  
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.hacemos{
+    grid-area: hacemos;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.hacemos{
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.textohacemos{
+    grid-area: textohacemos;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.textohacemos{
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.trabajamos{
+    grid-area: trabajamos;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.trabajamos{
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.imagenesquema{
+    grid-area: esquema;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.ayudarte{
+    grid-area: ayudarte;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+.ayudarte{
+     display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+
+.textoayudarte{
+    grid-area: textoayudarte;
+}
+.textoayudarte{
+     display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+
+
+.sinpuntos2{display: flex; 
+    list-style-type: none;
+     padding-left: 0%;  
+     gap: 100px;
+    flex-direction: row;
+align-items: center;
+background-color: rgb(0, 0, 0); 
+}
+
+/*servicios*/
+.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
+/*.imagenmoda{width: 50%; height: 30%;}
+.imagenproduct{ width: 50%; height: 30%;}
+.imagendiseño{ width: 50%;height: 30%;}*/
+.servicios{
+    display: grid;
+    grid-template-areas: 
+    "moda moda"
+    "imagenmoda parrafomoda"
+    "producto producto"
+    "parrafoproducto imagenproducto"
+    "diseno diseno"
+    "imagendiseno parrafodiseno";
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.servicios img{
+     width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.moda{
+    grid-area: moda;
+}
+
+
+.moda{
+     display: flex;
+    text-align: center;
+  justify-content: left; 
+  height: 50%;
+  margin-top: 24px;
+margin-bottom: -10px;
+}
+.imagenmoda{
+    grid-area: imagenmoda;
+}
+.parrafomoda{
+    grid-area: parrafomoda;
+}
+.parrafomoda{ 
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+
+}
+
+.producto{
+    grid-area: producto;
+}
+.producto{
+     display: flex;
+    text-align: center;
+  justify-content: right; 
+  margin-bottom: -10px;
+}
+.parrafoproducto{
+    grid-area: parrafoproducto;
+}
+.parrafoproducto{
+     display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.imagenproducto{
+    grid-area: imagenproducto;
+}
+.diseno{
+    grid-area: diseno;
+}
+.diseno{
+     display: flex;
+    text-align: center;
+  justify-content: left; 
+  margin-bottom: -10px;
+}
+.imagendiseno{
+    grid-area: imagendiseno;
+    
+}
+
+.parrafodiseno{
+    grid-area: parrafodiseno;
+}
+.parrafodiseno{
+     display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*nosotros*/
+.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
+
+.nosotros{
+display: grid;
+grid-template-areas:
+"historia historia"
+"imagenlogo parrafo1"
+"aqui aqui"
+"parrafo2 imagennere";
+grid-template-columns: 45% 45%;
+gap: 20px;
+
+justify-content: center;
+}
+.nosotros img{
+    width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.historia{
+    grid-area: historia;
+    
+}
+.historia{
+    display: flex;
+    /*justify-content: flex-start;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: -25px;*/
+    text-align: center;
+  justify-content: left; 
+  height: 50%;
+  margin-top: 24px;
+margin-bottom: -24px;
+   
+}
+.imagenlogo{
+    grid-area: imagenlogo;
+    
+
+}
+.parrafo1{
+    grid-area: parrafo1;
+}
+.parrafo1{
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.aqui{ 
+    display: flex;
+    text-align: center;
+  justify-content: right; 
+  height: 50%;
+   
+}
+.aqui{
+    grid-area: aqui;
+}
+.parrafo2{
+    grid-area: parrafo2;
+}
+.parrafo2 {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 100%;
+}
+.imagennere{
+    grid-area: imagennere;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*contactanos*/
+.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
+.contactanos{
+    display: grid;
+    height: 750px;
+    grid-template-areas: 
+    "colaborar colaborar foto"
+    "nombre apellido foto"
+    "email email foto"
+    "boton boton foto"
+    "empresa empresa foto"
+    "buscas buscas foto";
+    grid-template-columns: 1fr 1fr 250px;
+    gap: 20px;
+    
+}
+.contactanos label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contactanos input,
+.contactanos textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contactanos img{
+     width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.colaborar{
+    grid-area: colaborar;
+}
+.nombre{
+    grid-area: nombre;
+}
+.apellido{
+    grid-area: apellido;
+}
+.logocontactanos{
+    grid-area: foto;
+}
+.logocontactanos { 
+  grid-area: foto;
+  }
+
+.email{ 
+    grid-area: email;
+}
+.boton{
+    grid-area: boton;
+} 
+
+
+.empresa{
+    grid-area: empresa;
+}
+.buscas{
+    grid-area: buscas;
+}
