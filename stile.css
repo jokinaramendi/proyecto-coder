@@ -63,7 +63,9 @@ body{
     "hacemos textohacemos"
     "trabajamos esquema"
     "ayudarte textoayudarte";
-    grid-template-columns: 45% 45% /* 1fr 1fr*/;
+    grid-template-columns:  1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-bottom: 20px;
     justify-content: center;   
     gap: 20px;               
@@ -99,6 +101,10 @@ body{
   align-items: center; 
   justify-content: center; 
   height: 100%;
+  border-bottom: 1px solid black;  
+  padding-bottom: 8px;            
+  margin-bottom: 16px;             
+  width: fit-content; 
 }
   
 .textohacemos{
@@ -116,12 +122,17 @@ body{
     grid-area: trabajamos;
     margin-bottom: 15px;
     margin-top: 8px;
+    
 }
 .trabajamos{
     display: flex;
   align-items: center; 
   justify-content: center; 
   height: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
 }
 .imagenesquema{
     grid-area: esquema;
@@ -137,7 +148,13 @@ body{
      display: flex;
   align-items: center; 
   justify-content: center; 
-  height: 100%;
+  height: 100%; 
+  border-bottom: 0px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
+
+   
 }
 
 .textoayudarte{
@@ -165,13 +182,13 @@ align-items: center;
 background-color: rgb(0, 0, 0); 
 }*/
 
-.sinpuntos2 {
+footer .sinpuntos2 {
   display: grid;
   grid-template-areas:
     "instagram youtube whatsapp gmail"
     "texto1 texto1 texto2 texto2";
   grid-template-columns: repeat(4, auto);
-  gap: 20px;                        
+  gap: 40px;                        
   list-style-type: none;
   padding: 20px;
   margin: 0;
@@ -215,10 +232,16 @@ background-color: rgb(0, 0, 0);
     "parrafoproducto imagenproducto"
     "diseno diseno"
     "imagendiseno parrafodiseno";
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
+}
+.servicios p{
+     text-decoration: none;
+    font-size: 1.2rem;
 }
 .servicios img{
      width: 100%;
@@ -237,6 +260,11 @@ background-color: rgb(0, 0, 0);
   height: 50%;
   margin-top: 24px;
 margin-bottom: -10px;
+border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
+
 }
 .imagenmoda{
     grid-area: imagenmoda;
@@ -260,6 +288,12 @@ margin-bottom: -10px;
     text-align: center;
   justify-content: right; 
   margin-bottom: -10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
+  margin-left: auto;
+
 }
 .parrafoproducto{
     grid-area: parrafoproducto;
@@ -281,6 +315,11 @@ margin-bottom: -10px;
     text-align: center;
   justify-content: left; 
   margin-bottom: -10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
+
 }
 .imagendiseno{
     grid-area: imagendiseno;
@@ -318,10 +357,15 @@ grid-template-areas:
 "imagenlogo parrafo1"
 "aqui aqui"
 "parrafo2 imagennere";
-grid-template-columns: 45% 45%;
+grid-template-columns: 1fr 1fr;
 gap: 20px;
-
+padding-left: 5%;
+padding-right: 5%;
 justify-content: center;
+}
+.nosotros p{
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 .nosotros img{
     width: 100%;
@@ -343,6 +387,11 @@ justify-content: center;
   height: 50%;
   margin-top: 24px;
 margin-bottom: -24px;
+border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content; 
+
    
 }
 .imagenlogo{
@@ -362,8 +411,14 @@ margin-bottom: -24px;
 .aqui{ 
     display: flex;
     text-align: center;
-  justify-content: right; 
+  justify-content: flex-end; 
   height: 50%;
+  border-bottom: 1px solid black;
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  width: fit-content; 
+margin-left: auto;
+
    
 }
 .aqui{
