@@ -242,10 +242,7 @@ footer .sinpuntos2 {
 
 }
 @media(max-width:768px){
-  .navbar{
-    
-    margin-top: 2px;
-  }
+  
   .navbar-nav{
     gap: 0 !important;
   }
