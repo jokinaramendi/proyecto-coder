@@ -280,6 +280,8 @@ footer .sinpuntos2 {
 .servicios{
     display: grid;
     grid-template-areas: 
+    "nuestros nuestros"
+    "nuestroservicios nuestroservicios"
     "moda moda"
     "imagenmoda parrafomoda"
     "producto producto"
@@ -293,9 +295,32 @@ footer .sinpuntos2 {
     justify-content: center;
     margin-bottom: 20px;
 }
+.nuestros{
+  grid-area: nuestros;
+}
+.nuestros{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nuestros1{
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+.nuestroservicios{
+  grid-area: nuestroservicios;
+}
+.nuestroservicios{
+  text-align: center;
+}
 .servicios p{
      text-decoration: none;
     font-size: 1.2rem;
+    text-align: center;
 }
 .servicios img{
      width: 100%;
@@ -390,6 +415,51 @@ border-bottom: 1px solid black;
   height: 100%;
 }
 
+@media(max-width:768px){
+  .servicios{
+    grid-template-areas: 
+    "nuestros"
+    "nuestroservicios"
+    "moda "
+    "imagenmoda"
+    "parrafomoda"
+    "producto"
+    "imagenproducto "
+    "parrafoproducto "
+    "diseno "
+    "imagendiseno "
+    "parrafodiseno";
+     grid-template-columns: 1fr ;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+  .servicios p{
+    text-align: center;
+  }
+  .nuestros1{
+    text-align: center ;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  }
+  .servicios h2 {
+    display: inline-block;
+  text-align: center ;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  
+}
+
+
+}
+
+  
 
 
 
@@ -497,6 +567,7 @@ margin-left: auto;
 .cardcontainer{
   display: grid;
   grid-template-areas:
+  "colaborar colaborar img"
     "card1 card1 img"
     "card1 card1 img"
     "card2 card3 img";
@@ -528,8 +599,22 @@ margin-left: auto;
 
 .card { margin: 0; }
 
-
-
+.colaborar{
+  grid-area: colaborar;
+}
+.colaborar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colaborar1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
 .card1{
   grid-area: card1;
 }
