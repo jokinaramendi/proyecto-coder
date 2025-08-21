@@ -9,6 +9,7 @@ box-sizing: border-box;
 }
 
 /* index.html*/
+/*Media query para desktop*/
 .navbar-negro{
     background-color: black;
 }
@@ -17,20 +18,14 @@ box-sizing: border-box;
 .imagen1{ width: 100%;
     height: 100%;
      }
+.imagen2{
+  width: 100%;
+  height: 100%;
+}
 .imagenlink{
     width: 40px; height: 40px; list-style: none;
     }
-   /*.navbar{ list-style-type: none;
-     padding-left: 0%; 
-     display: flex; 
-      gap: 4px;
-    flex-direction: row;
-align-items: center;
-font-family: "Albert Sans", sans-serif;
-text-decoration: none;
-font-weight: bold;
-background-color: black;
-}*/
+   
 body{
      min-height: 100vh;
   display: flex;
@@ -202,12 +197,18 @@ footer .sinpuntos2 {
   height: 40px;
 }
 
-.instagram { grid-area: instagram; }
-.youtube   { grid-area: youtube; }
-.whatsapp  { grid-area: whatsapp; }
-.gmail     { grid-area: gmail; }
-.texto1    { grid-area: texto1; }
-.texto2    { grid-area: texto2; }
+.instagram { 
+  grid-area: instagram; }
+.youtube   { 
+  grid-area: youtube; }
+.whatsapp  { 
+  grid-area: whatsapp; }
+.gmail     { 
+  grid-area: gmail; }
+.texto1    { 
+  grid-area: texto1; }
+.texto2    { 
+  grid-area: texto2; }
 
 .textofooter, .textofooter2 {
   color: white;
@@ -217,7 +218,61 @@ footer .sinpuntos2 {
   margin: 0;
 }
 @media(max-width:768px){
+  .imagen1{ display: none;}
+  .gridcontenido{grid-template-areas: 
+    "imagen2"
+    "trece "
+    "hacemos" 
+    "textohacemos"
+    "trabajamos"
+    "esquema"
+    "ayudarte"
+    "textoayudarte"
+    ;
+    grid-template-columns:  1fr ;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+    justify-content: center;   
+    gap: 20px;                     
+    margin: 0 auto 20px auto;
 
+  }
+
+
+}
+@media(max-width:768px){
+  .navbar{
+    
+    margin-top: 2px;
+  }
+  .navbar-nav{
+    gap: 0 !important;
+  }
+  .navbar-nav .nav-link{
+     padding-top: 4px !important;  
+    padding-bottom: 4px !important;
+    margin-bottom: 0 !important;
+    line-height: 2.5;
+  }
+  .ayudarte{
+    border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 100%; 
+  }
+  .trabajamos{ border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 100%; 
+
+  }
+  .hacemos{
+ border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: 100%; 
+  }/* a lo mejor hay que hacer el media query del footer tambie*/
 }
 
 /*servicios*/
