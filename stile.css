@@ -69,6 +69,10 @@ body{
    
 
 }
+.gridcontenido h2{
+  font-size: 25px;
+
+}
 .gridcontenido img{
      width: 100%;
   height: auto;
@@ -182,6 +186,7 @@ margin: 0;
 background-color: black;
 justify-content: center;
 align-items: center;
+margin-bottom: 0;
 }
 
 .imagenlink {
@@ -269,10 +274,7 @@ align-items: center;
 }
 
 /*servicios*/
-.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
-/*.imagenmoda{width: 50%; height: 30%;}
-.imagenproduct{ width: 50%; height: 30%;}
-.imagendiseño{ width: 50%;height: 30%;}*/
+
 .servicios{
     display: grid;
     grid-template-areas: 
