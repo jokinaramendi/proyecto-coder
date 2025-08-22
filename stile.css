@@ -261,6 +261,7 @@ align-items: center;
   padding-bottom: 8px;
   margin-bottom: 16px;
   width: 100%; 
+  text-align: center;
   }/* a lo mejor hay que hacer el media query del footer tambie*/
 }
 
