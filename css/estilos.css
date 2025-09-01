@@ -609,7 +609,7 @@ footer .sinpuntos2 .texto2 {
 /*TABLET*/
 @media (min-width: 769px) and (max-width: 1024px) {
   .mainservicios .servicios {
-    grid-template-areas: "nuestros nuestros" "nuestroservicios nuestroservicios" "moda moda" "imagenmoda parrafomoda" "producto producto" "imagenproducto parrafoproducto" "diseno diseno" "imagendiseno parrafodiseno";
+    grid-template-areas: "nuestros nuestros" "nuestroservicios nuestroservicios" "moda moda" "imagenmoda parrafomoda" "producto producto" "parrafoproducto imagenproducto " "diseno diseno" "imagendiseno parrafodiseno";
     grid-template-columns: 1fr 1fr;
     padding-left: 5%;
     padding-right: 5%;
