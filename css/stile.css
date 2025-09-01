@@ -1,16 +1,16 @@
 /*fonts*/
-.fonts{
+/*.fonts{
 font-family: "Albert Sans", sans-serif;
 
 }
 *{margin: 0; 
     padding: 0;
 box-sizing: border-box;
-}
+}*/
 
 /* index.html*/
 /*Media query para desktop*/
-.navbar-negro{
+/*.navbar-negro{
     background-color: black;
 }
 
@@ -22,9 +22,7 @@ box-sizing: border-box;
   width: 100%;
   height: 100%;
 }
-.imagenlink{
-    width: 40px; height: 40px; list-style: none;
-    }
+
    
 body{
      min-height: 100vh;
@@ -117,6 +115,7 @@ body{
   justify-content: center; 
   height: 100%;
 }
+
 .trabajamos{
     grid-area: trabajamos;
     margin-bottom: 15px;
@@ -213,8 +212,8 @@ margin-bottom: 0;
   font-size: 14px;
   text-align: center;
   margin: 0;
-}
-@media(max-width:768px){
+}*/
+/*@media(max-width:768px){
   .imagen1{ display: none;}
   .gridcontenido{grid-template-areas: 
     "imagen2"
@@ -240,10 +239,10 @@ margin-bottom: 0;
 }
 @media(max-width:768px){
   
-  .navbar-nav{
+  .nav-media{
     gap: 0 !important;
   }
-  .navbar-nav .nav-link{
+  .link-media{
      padding-top: 4px !important;  
     padding-bottom: 4px !important;
     margin-bottom: 0 !important;
@@ -271,11 +270,11 @@ margin-bottom: 0;
   .gridcontenido p{
     text-align: center;
   }
-}
+}*/
 
 /*servicios*/
 
-.servicios{
+/*.servicios{
     display: grid;
     grid-template-areas: 
     "nuestros nuestros"
@@ -411,8 +410,8 @@ border-bottom: 1px solid black;
   align-items: center; 
   justify-content: center; 
   height: 100%;
-}
-
+}*/
+/*
 @media(max-width:768px){
   .servicios{
     grid-template-areas: 
@@ -456,7 +455,7 @@ border-bottom: 1px solid black;
 
 
 }
-
+*/
   
 
 
@@ -470,7 +469,7 @@ border-bottom: 1px solid black;
 
 
 /*nosotros*/
-.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
+/*.sinpuntos{ list-style-type: none; padding-left: 0%; display: flex; gap:4%;}
 
 .nosotros{
 display: grid;
@@ -554,7 +553,7 @@ margin-left: auto;
 .imagennere{
     grid-area: imagennere;
     margin-bottom: 20px;
-}
+}*/
 
 
 
@@ -562,7 +561,7 @@ margin-left: auto;
 
 /*contactanos*/
 
-.cardcontainer{
+/*.cardcontainer{
   display: grid;
   grid-template-areas:
   "colaborar colaborar img"
@@ -633,6 +632,6 @@ margin-left: auto;
 
 .card3{
   grid-area: card3;
-}
+}*/
 
 

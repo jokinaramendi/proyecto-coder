@@ -1,0 +1,70 @@
+.mainnosotros{
+    .nosotros{
+     display: grid;
+     grid-template-areas:
+     "historia historia"
+     "imagenlogo parrafo1"
+     "aqui aqui"
+     "parrafo2 imagennere";
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+     padding-left: 5%;
+     padding-right: 5%;
+     justify-content: center;
+        p{
+         text-decoration: none;
+         font-size: 1.2rem;
+         }
+        img{
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+        }
+        .historia{
+         grid-area: historia;
+         display: flex;
+         text-align: center;
+         justify-content: left; 
+         height: 50%;
+         margin-top: 24px;
+         margin-bottom: -24px;
+         border-bottom: 1px solid black;
+         padding-bottom: 8px;
+         margin-bottom: 16px;
+         width: fit-content;
+        }
+        .imagenlogo{
+         grid-area: imagenlogo;
+        }
+        .parrafo1{
+         grid-area: parrafo1;
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         height: 100%;
+        }
+        .aqui{
+         grid-area: aqui;
+         display: flex;
+         text-align: center;
+         justify-content: flex-end; 
+         height: 50%;
+         border-bottom: 1px solid black;
+         padding-bottom: 18px;
+         margin-bottom: 16px;
+         width: fit-content; 
+         margin-left: auto;
+        }
+        .imagennere{
+         grid-area: imagennere;
+         margin-bottom: 20px;
+        }
+        .parrafo2{
+         grid-area: parrafo2;
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         height: 100%;
+        }
+    }
+}

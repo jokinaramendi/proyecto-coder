@@ -1,0 +1,116 @@
+.mainservicios{
+    .servicios{
+    display: grid;
+    grid-template-areas: 
+    "nuestros nuestros"
+    "nuestroservicios nuestroservicios"
+    "moda moda"
+    "imagenmoda parrafomoda"
+    "producto producto"
+    "parrafoproducto imagenproducto"
+    "diseno diseno"
+    "imagendiseno parrafodiseno";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+        .nuestros{
+         grid-area: nuestros;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+            .nuestros1{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             margin-top: 10px;
+             border-bottom: 1px solid black;
+             width: fit-content;
+            }
+        }
+        .nuestroservicios{
+         grid-area: nuestroservicios;
+         text-align: center;
+        }
+        p{
+         text-decoration: none;
+         font-size: 1.2rem;
+         text-align: center;
+        }
+        img{
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+        }
+        .moda{
+         grid-area: moda;
+         display: flex;
+         text-align: center;
+         justify-content: left; 
+         height: 50%;
+         margin-top: 24px;
+         margin-bottom: -10px;
+         border-bottom: 1px solid black;
+         padding-bottom: 8px;
+         margin-bottom: 16px;
+         width: fit-content; 
+        }
+        .imagenmoda{
+         grid-area: imagenmoda;
+        }
+        .parrafomoda{
+         grid-area: parrafomoda; 
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         height: 100%;
+        }
+        .producto{
+         grid-area: producto;
+         display: flex;
+         text-align: center;
+         justify-content: right;
+         margin-bottom: -10px;
+         border-bottom: 1px solid black;
+         padding-bottom: 8px;
+         margin-bottom: 16px;
+         width: fit-content; 
+         margin-left: auto;
+        }
+        .imagenproducto{
+         grid-area: imagenproducto;
+        }
+        .parrafoproducto{
+         grid-area: parrafoproducto;
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         height: 100%;
+        }
+        .diseno{
+         grid-area: diseno;
+         display: flex;
+         text-align: center;
+         justify-content: left; 
+         margin-bottom: -10px;
+         border-bottom: 1px solid black;
+         padding-bottom: 8px;
+         margin-bottom: 16px;
+         width: fit-content; 
+        }
+        .imagendiseño{
+         grid-area: imagendiseno;
+        }
+        .parrafodiseno{
+         grid-area: parrafodiseno;
+         display: flex;
+         align-items: center; 
+         justify-content: center; 
+         height: 100%;
+        }
+
+    }
+       
+}

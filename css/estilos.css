@@ -1,0 +1,828 @@
+@charset "UTF-8";
+/* fonts*/
+.fonts {
+  font-family: "Albert Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+body .navbar-negro {
+  background-color: black;
+}
+body .navbar-negro .logo {
+  width: 70px;
+  height: 70px;
+}
+
+.lugarimagen1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  width: fit-content;
+}
+.lugarimagen1 .imagen1 {
+  width: 100%;
+  height: 100%;
+}
+.lugarimagen1 .imagen2 {
+  width: 100%;
+  height: 100%;
+}
+.lugarimagen1 h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 20px;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  text-align: center;
+}
+
+.gridcontenido {
+  display: grid;
+  grid-template-areas: "trece trece" "hacemos textohacemos" "trabajamos esquema" "ayudarte textoayudarte";
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+}
+.gridcontenido .trecestudio {
+  grid-area: trece;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.gridcontenido h2 {
+  font-size: 25px;
+}
+.gridcontenido img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.gridcontenido .hacemos {
+  grid-area: hacemos;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.gridcontenido .textohacemos {
+  grid-area: textohacemos;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.gridcontenido .trabajamos {
+  grid-area: trabajamos;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.gridcontenido .imagenesquema {
+  grid-area: esquema;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.gridcontenido .ayudarte {
+  grid-area: ayudarte;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-bottom: 0px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.gridcontenido .textoayudarte {
+  grid-area: textoayudarte;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+footer .sinpuntos2 {
+  display: grid;
+  grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";
+  grid-template-columns: repeat(4, auto);
+  gap: 40px;
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  /* crear una funcion con esto*/
+}
+footer .sinpuntos2 .instagram {
+  grid-area: instagram;
+}
+footer .sinpuntos2 .youtube {
+  grid-area: youtube;
+}
+footer .sinpuntos2 .whatsapp {
+  grid-area: whatsapp;
+}
+footer .sinpuntos2 .gmail {
+  grid-area: gmail;
+}
+footer .sinpuntos2 .texto1 {
+  grid-area: texto1;
+}
+footer .sinpuntos2 .texto2 {
+  grid-area: texto2;
+}
+footer .sinpuntos2 .imagenlink {
+  width: 40px;
+  height: 40px;
+}
+footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
+  color: white;
+  font-family: "Albert Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+.mainservicios .servicios {
+  display: grid;
+  grid-template-areas: "nuestros nuestros" "nuestroservicios nuestroservicios" "moda moda" "imagenmoda parrafomoda" "producto producto" "parrafoproducto imagenproducto" "diseno diseno" "imagendiseno parrafodiseno";
+  grid-template-columns: 1fr 1fr;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.mainservicios .servicios .nuestros {
+  grid-area: nuestros;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainservicios .servicios .nuestros .nuestros1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+.mainservicios .servicios .nuestroservicios {
+  grid-area: nuestroservicios;
+  text-align: center;
+}
+.mainservicios .servicios p {
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.mainservicios .servicios img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.mainservicios .servicios .moda {
+  grid-area: moda;
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  height: 50%;
+  margin-top: 24px;
+  margin-bottom: -10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.mainservicios .servicios .imagenmoda {
+  grid-area: imagenmoda;
+}
+.mainservicios .servicios .parrafomoda {
+  grid-area: parrafomoda;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.mainservicios .servicios .producto {
+  grid-area: producto;
+  display: flex;
+  text-align: center;
+  justify-content: right;
+  margin-bottom: -10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+  margin-left: auto;
+}
+.mainservicios .servicios .imagenproducto {
+  grid-area: imagenproducto;
+}
+.mainservicios .servicios .parrafoproducto {
+  grid-area: parrafoproducto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.mainservicios .servicios .diseno {
+  grid-area: diseno;
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  margin-bottom: -10px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.mainservicios .servicios .imagendiseño {
+  grid-area: imagendiseno;
+}
+.mainservicios .servicios .parrafodiseno {
+  grid-area: parrafodiseno;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainnosotros .nosotros {
+  display: grid;
+  grid-template-areas: "historia historia" "imagenlogo parrafo1" "aqui aqui" "parrafo2 imagennere";
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
+}
+.mainnosotros .nosotros p {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.mainnosotros .nosotros img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.mainnosotros .nosotros .historia {
+  grid-area: historia;
+  display: flex;
+  text-align: center;
+  justify-content: left;
+  height: 50%;
+  margin-top: 24px;
+  margin-bottom: -24px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+.mainnosotros .nosotros .imagenlogo {
+  grid-area: imagenlogo;
+}
+.mainnosotros .nosotros .parrafo1 {
+  grid-area: parrafo1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.mainnosotros .nosotros .aqui {
+  grid-area: aqui;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  height: 50%;
+  border-bottom: 1px solid black;
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  width: fit-content;
+  margin-left: auto;
+}
+.mainnosotros .nosotros .imagennere {
+  grid-area: imagennere;
+  margin-bottom: 20px;
+}
+.mainnosotros .nosotros .parrafo2 {
+  grid-area: parrafo2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.maincontactanos .cardcontainer {
+  display: grid;
+  grid-template-areas: "colaborar colaborar img" "card1 card1 img" "card1 card1 img" "card2 card3 img";
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 6px;
+  row-gap: 6px;
+  justify-content: start;
+  justify-items: stretch;
+  align-items: start;
+}
+.maincontactanos .cardcontainer .colaborar {
+  grid-area: colaborar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maincontactanos .cardcontainer .colaborar .colaborar1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+}
+.maincontactanos .cardcontainer .logocontactanos {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+}
+.maincontactanos .cardcontainer .card {
+  margin: 0;
+}
+.maincontactanos .cardcontainer .card1 {
+  grid-area: card1;
+  margin-top: 20px;
+}
+.maincontactanos .cardcontainer .card2 {
+  grid-area: card2;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.maincontactanos .cardcontainer .card2 .card {
+  max-width: none !important;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.maincontactanos .cardcontainer .card3 {
+  grid-area: card3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.maincontactanos .cardcontainer .card3 .card {
+  max-width: none !important;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* INDEX MEDIA*/
+@media (max-width: 768px) {
+  .nav-media {
+    gap: 0 !important;
+  }
+  .nav-media .link-media {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 0 !important;
+    line-height: 2.5;
+  }
+  .imagen1 {
+    display: none;
+  }
+  .gridcontenido {
+    grid-template-areas: "imagen2" "trece " "hacemos" "textohacemos" "trabajamos" "esquema" "ayudarte" "textoayudarte";
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto 20px auto;
+  }
+  .gridcontenido .trecestudio {
+    grid-area: trece;
+  }
+  .gridcontenido .hacemos {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+    grid-area: hacemos;
+  }
+  .gridcontenido .textohacemos {
+    grid-area: textohacemos;
+  }
+  .gridcontenido .trabajamos {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    grid-area: trabajamos;
+  }
+  .gridcontenido .imagenesquema {
+    grid-area: esquema;
+  }
+  .gridcontenido .ayudarte {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    grid-area: ayudarte;
+  }
+  .gridcontenido .textoayudarte {
+    grid-area: textoayudarte;
+  }
+  .gridcontenido p {
+    text-align: center;
+  }
+}
+footer .sinpuntos2 {
+  grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
+}
+footer .sinpuntos2 .instagram {
+  grid-area: instagram;
+}
+footer .sinpuntos2 .youtube {
+  grid-area: youtube;
+}
+footer .sinpuntos2 .whatsapp {
+  grid-area: whatsapp;
+}
+footer .sinpuntos2 .gmail {
+  grid-area: gmail;
+}
+footer .sinpuntos2 .texto1 {
+  grid-area: texto1;
+}
+footer .sinpuntos2 .texto2 {
+  grid-area: texto2;
+}
+
+/*TABLET*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-media {
+    gap: 0 !important;
+  }
+  .nav-media .link-media {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 0 !important;
+    line-height: 2.5;
+  }
+  .lugarimagen1 h3 {
+    font-size: 15px;
+  }
+  footer .sinpuntos2 {
+    grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+  }
+  footer .sinpuntos2 .instagram {
+    grid-area: instagram;
+  }
+  footer .sinpuntos2 .youtube {
+    grid-area: youtube;
+  }
+  footer .sinpuntos2 .whatsapp {
+    grid-area: whatsapp;
+  }
+  footer .sinpuntos2 .gmail {
+    grid-area: gmail;
+  }
+  footer .sinpuntos2 .texto1 {
+    grid-area: texto1;
+  }
+  footer .sinpuntos2 .texto2 {
+    grid-area: texto2;
+  }
+}
+/*SERVICIOS*/
+@media (max-width: 768px) {
+  .mainservicios .servicios {
+    grid-template-areas: "nuestros" "nuestroservicios" "moda" "imagenmoda" "parrafomoda" "producto" "imagenproducto " "parrafoproducto " "diseno" "imagendiseno" "parrafodiseno";
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .mainservicios .servicios .nuestros1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+    grid-area: nuestros;
+  }
+  .mainservicios .servicios .nuestroservicios {
+    grid-area: nuestroservicios;
+  }
+  .mainservicios .servicios .moda {
+    grid-area: moda;
+  }
+  .mainservicios .servicios .imagenmoda {
+    grid-area: imagenmoda;
+  }
+  .mainservicios .servicios .parrafomoda {
+    grid-area: parrafomoda;
+  }
+  .mainservicios .servicios .producto {
+    grid-area: producto;
+  }
+  .mainservicios .servicios .imagenproducto {
+    grid-area: imagenproducto;
+  }
+  .mainservicios .servicios .parrafoproducto {
+    grid-area: parrafoproducto;
+  }
+  .mainservicios .servicios .diseno {
+    grid-area: diseno;
+  }
+  .mainservicios .servicios .imagendiseno {
+    grid-area: imagendiseno;
+  }
+  .mainservicios .servicios .parrafodiseno {
+    grid-area: parrafodiseno;
+  }
+  .mainservicios .servicios p {
+    text-align: center;
+  }
+  .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+/*TABLET*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainservicios .servicios {
+    grid-template-areas: "nuestros nuestros" "nuestroservicios nuestroservicios" "moda moda" "imagenmoda parrafomoda" "producto producto" "imagenproducto parrafoproducto" "diseno diseno" "imagendiseno parrafodiseno";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .mainservicios .servicios .nuestros1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 50%;
+    grid-area: nuestros;
+  }
+  .mainservicios .servicios .nuestroservicios {
+    grid-area: nuestroservicios;
+  }
+  .mainservicios .servicios .moda {
+    grid-area: moda;
+  }
+  .mainservicios .servicios .imagenmoda {
+    grid-area: imagenmoda;
+  }
+  .mainservicios .servicios .parrafomoda {
+    grid-area: parrafomoda;
+  }
+  .mainservicios .servicios .producto {
+    grid-area: producto;
+  }
+  .mainservicios .servicios .imagenproducto {
+    grid-area: imagenproducto;
+  }
+  .mainservicios .servicios .parrafoproducto {
+    grid-area: parrafoproducto;
+  }
+  .mainservicios .servicios .diseno {
+    grid-area: diseno;
+  }
+  .mainservicios .servicios .imagendiseno {
+    grid-area: imagendiseno;
+  }
+  .mainservicios .servicios .parrafodiseno {
+    grid-area: parrafodiseno;
+  }
+  .mainservicios .servicios p {
+    text-align: center;
+  }
+  .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto 46px;
+  }
+}
+/*NOSOTROS*/
+@media (max-width: 768px) {
+  .mainnosotros .nosotros {
+    grid-template-areas: "historia" "imagenlogo" "parrafo1" "aqui" "imagennere" "parrafo2";
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .mainnosotros .nosotros .historia {
+    grid-area: historia;
+  }
+  .mainnosotros .nosotros .imagenlogo {
+    grid-area: imagenlogo;
+  }
+  .mainnosotros .nosotros .parrafo1 {
+    grid-area: parrafo1;
+    text-align: center;
+  }
+  .mainnosotros .nosotros .aqui {
+    grid-area: aqui;
+  }
+  .mainnosotros .nosotros .imagennere {
+    grid-area: imagennere;
+  }
+  .mainnosotros .nosotros .parrafo2 {
+    grid-area: parrafo2;
+    text-align: center;
+  }
+  .mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+}
+/*TABLET*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainnosotros .nosotros {
+    grid-template-areas: "historia historia" "imagenlogo parrafo1" "aqui aqui" "imagennere parrafo2";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .mainnosotros .nosotros .historia {
+    grid-area: historia;
+  }
+  .mainnosotros .nosotros .imagenlogo {
+    grid-area: imagenlogo;
+  }
+  .mainnosotros .nosotros .parrafo1 {
+    grid-area: parrafo1;
+    text-align: center;
+  }
+  .mainnosotros .nosotros .aqui {
+    grid-area: aqui;
+  }
+  .mainnosotros .nosotros .imagennere {
+    grid-area: imagennere;
+  }
+  .mainnosotros .nosotros .parrafo2 {
+    grid-area: parrafo2;
+    text-align: center;
+  }
+  .mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+    width: 50%;
+    margin: 20px auto 46px;
+  }
+}
+/*CONTACTANOS*/
+@media (max-width: 768px) {
+  .maincontactanos .cardcontainer {
+    grid-template-areas: "colaborar" "card1" "card2" "card3";
+    grid-template-columns: 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .maincontactanos .cardcontainer .colaborar {
+    grid-area: colaborar;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  .maincontactanos .cardcontainer .colaborar .colaborar1 {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .maincontactanos .cardcontainer .card1 {
+    grid-area: card1;
+  }
+  .maincontactanos .cardcontainer .card2 {
+    grid-area: card2;
+  }
+  .maincontactanos .cardcontainer .card3 {
+    grid-area: card3;
+  }
+  .maincontactanos .cardcontainer .logocontactanos {
+    display: none;
+  }
+}
+/*TABLET*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .maincontactanos .cardcontainer {
+    grid-template-areas: "colaborar colaborar" "card1 card1" "card2 card3";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .maincontactanos .cardcontainer .colaborar {
+    grid-area: colaborar;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  .maincontactanos .cardcontainer .colaborar .colaborar1 {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 50%;
+    margin: 20px auto 46px;
+  }
+  .maincontactanos .cardcontainer .card1 {
+    grid-area: card1;
+  }
+  .maincontactanos .cardcontainer .card2 {
+    grid-area: card2;
+  }
+  .maincontactanos .cardcontainer .card3 {
+    grid-area: card3;
+  }
+  .maincontactanos .cardcontainer .logocontactanos {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
