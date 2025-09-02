@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* INDEX*/
 /* fonts*/
 .fonts {
   font-family: "Albert Sans", sans-serif;
@@ -8,6 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.navbar .nav-media {
+  gap: 3rem;
 }
 
 body {
@@ -186,6 +191,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   margin: 0;
 }
 
+/* SERVICIOS*/
 .mainservicios .servicios {
   display: grid;
   grid-template-areas: "nuestros nuestros" "nuestroservicios nuestroservicios" "moda moda" "imagenmoda parrafomoda" "producto producto" "parrafoproducto imagenproducto" "diseno diseno" "imagendiseno parrafodiseno";
@@ -291,6 +297,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   height: 100%;
 }
 
+/* NOSOTROS*/
 .mainnosotros .nosotros {
   display: grid;
   grid-template-areas: "historia historia" "imagenlogo parrafo1" "aqui aqui" "parrafo2 imagennere";
@@ -356,6 +363,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   height: 100%;
 }
 
+/* CONTACTANOS*/
 .maincontactanos .cardcontainer {
   display: grid;
   grid-template-areas: "colaborar colaborar img" "card1 card1 img" "card1 card1 img" "card2 card3 img";
@@ -419,13 +427,13 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
 
 /* INDEX MEDIA*/
 @media (max-width: 768px) {
-  .nav-media {
-    gap: 0 !important;
+  .navbar .container-nav .nav-media {
+    gap: 0;
   }
-  .nav-media .link-media {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    margin-bottom: 0 !important;
+  .navbar .container-nav .nav-media .link-media {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
     line-height: 2.5;
   }
   .imagen1 {
@@ -507,13 +515,13 @@ footer .sinpuntos2 .texto2 {
 
 /*TABLET*/
 @media (min-width: 769px) and (max-width: 1024px) {
-  .nav-media {
-    gap: 0 !important;
+  .navbar .container-nav .nav-media {
+    gap: 0;
   }
-  .nav-media .link-media {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    margin-bottom: 0 !important;
+  .navbar .container-nav .link-media {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
     line-height: 2.5;
   }
   .lugarimagen1 h3 {

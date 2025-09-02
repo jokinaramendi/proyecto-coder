@@ -1,14 +1,18 @@
 /* INDEX MEDIA*/
 @media(max-width:768px){
-  .nav-media{
-    gap: 0 !important;
+.navbar{
+    .container-nav{
+        .nav-media{
+         gap: 0  ;
         .link-media{
-          padding-top: 4px !important;  
-          padding-bottom: 4px !important;
-          margin-bottom: 0 !important;
+          padding-top: 4px ;  
+          padding-bottom: 4px  ;
+          margin-bottom: 0  ;
           line-height: 2.5;
         }
     }
+    }
+}
     .imagen1{ display: none;}
     .gridcontenido{
         grid-template-areas: 
@@ -101,15 +105,19 @@ footer{
 }
 /*TABLET*/
 @media (min-width: 769px) and (max-width: 1024px){
-    .nav-media {
-    gap: 0 !important;
-  }
-  .nav-media .link-media {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    margin-bottom: 0 !important;
-    line-height: 2.5;
-  }
+.navbar{
+    .container-nav{
+        .nav-media {
+        gap: 0  ;
+        }
+        .link-media {
+        padding-top: 4px  ;
+        padding-bottom: 4px ;
+        margin-bottom: 0 ;
+        line-height: 2.5;
+        }
+    }
+}
   .lugarimagen1{
         h3{
             font-size: 15px;

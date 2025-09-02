@@ -1,3 +1,4 @@
+/* INDEX*/
 /* fonts*/
 .fonts{
 font-family: "Albert Sans", sans-serif;
@@ -7,6 +8,12 @@ font-family: "Albert Sans", sans-serif;
    padding: 0;
    box-sizing: border-box;
 } 
+ .navbar {
+   .nav-media {
+    gap: 3rem;
+
+ } 
+}
 body{
      min-height: 100vh;
   display: flex;
