@@ -406,11 +406,13 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   margin-right: 10px;
 }
 .maincontactanos .cardcontainer .card2 .card {
-  max-width: none !important;
   width: 100%;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.maincontactanos .cardcontainer .card2 .card h2 {
+  font-size: 1.5rem;
 }
 .maincontactanos .cardcontainer .card3 {
   grid-area: card3;
@@ -418,11 +420,13 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   margin-right: 10px;
 }
 .maincontactanos .cardcontainer .card3 .card {
-  max-width: none !important;
   width: 100%;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.maincontactanos .cardcontainer .card3 .card h2 {
+  font-size: 1.5rem;
 }
 
 /* INDEX MEDIA*/
