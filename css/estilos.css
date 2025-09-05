@@ -94,6 +94,7 @@ body .navbar-negro .logo {
   font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 700;
   animation: marquee 12s linear infinite;
+  overflow: hidden;
 }
 @keyframes marquee {
   from {
@@ -403,16 +404,10 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   }
   .gridcontenido .trecestudio {
     grid-area: trece;
+    animation: none;
+    text-align: center;
   }
-  @keyframes marquee {
-    from {
-      transform: translateX(-95%);
-    }
-    to {
-      transform: translateX(105%);
-    }
-  }
-  .gridcontenido .trecestudio .span1, .gridcontenido .trecestudio .span2 {
+  .gridcontenido .trecestudio .span1 {
     display: none;
   }
   .gridcontenido .hacemos {
@@ -489,6 +484,13 @@ footer .sinpuntos2 .texto2 {
   }
   .lugarimagen1 h3 {
     font-size: 15px;
+  }
+  .gridcontenido .trecestudio {
+    animation: none;
+    text-align: center;
+  }
+  .gridcontenido .trecestudio .span1 {
+    display: none;
   }
   footer .sinpuntos2 {
     grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";

@@ -35,15 +35,9 @@
     margin: 0 auto 20px auto;
         .trecestudio{
             grid-area: trece ;
-                @keyframes  marquee {
-                    from {
-                        transform: translateX(-95%) ;
-                    }
-                    to {
-                        transform: translateX(105%) ;
-                    }
-                }
-                .span1,.span2{
+               animation: none; 
+               text-align: center;
+                .span1{
                     display: none;
                 }
                 
@@ -136,6 +130,18 @@ footer{
             font-size: 15px;
         }
   }
+  .gridcontenido{
+    .trecestudio{
+       animation: none; 
+       text-align: center;
+                .span1{
+                    display: none;
+                }
+       
+       }
+
+  }
+  
   footer{
     .sinpuntos2{
         grid-template-areas: 
@@ -167,6 +173,8 @@ footer{
 }
 }
 }
+
+
 /*SERVICIOS*/
 @media(max-width:768px){
     .mainservicios{

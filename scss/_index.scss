@@ -78,6 +78,7 @@ body{
      font-size: clamp(2rem, 5vw, 4rem);
      font-weight: 700;
      animation: marquee 12s linear infinite;
+     overflow: hidden;   
      
     }
    @keyframes marquee {
