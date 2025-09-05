@@ -1,6 +1,7 @@
-@use "./variables";
-@use "./index";
-@use "./servicios";
-@use "./nosotros";
-@use "./contactanos";
-@use "./media";
+@use './variables' as *; 
+@use './extends';
+@use './index';
+@use './servicios';
+@use './nosotros';
+@use './contactanos';
+@use './media';

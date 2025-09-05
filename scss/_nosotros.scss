@@ -1,3 +1,5 @@
+@use './variables' as *;
+@use './extends' as *;
 /* NOSOTROS*/
 .mainnosotros{
     .nosotros{
@@ -23,26 +25,17 @@
         }
         .historia{
          grid-area: historia;
-         display: flex;
-         text-align: center;
-         justify-content: left; 
+         @extend %centrado-flex;
          height: 50%;
          margin-top: 24px;
-         margin-bottom: -24px;
-         border-bottom: 1px solid black;
-         padding-bottom: 8px;
-         margin-bottom: 16px;
-         width: fit-content;
+         @extend %titulos-ext;
         }
         .imagenlogo{
          grid-area: imagenlogo;
         }
         .parrafo1{
          grid-area: parrafo1;
-         display: flex;
-         align-items: center; 
-         justify-content: center; 
-         height: 100%;
+         @extend %centrado-flex;
         }
         .aqui{
          grid-area: aqui;
@@ -50,10 +43,8 @@
          text-align: center;
          justify-content: flex-end; 
          height: 50%;
-         border-bottom: 1px solid black;
+         @extend %titulos-ext;
          padding-bottom: 18px;
-         margin-bottom: 16px;
-         width: fit-content; 
          margin-left: auto;
         }
         .imagennere{
@@ -62,10 +53,7 @@
         }
         .parrafo2{
          grid-area: parrafo2;
-         display: flex;
-         align-items: center; 
-         justify-content: center; 
-         height: 100%;
+         @extend %centrado-flex;
         }
     }
 }

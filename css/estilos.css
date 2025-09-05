@@ -1,5 +1,19 @@
 @charset "UTF-8";
-/* INDEX*/
+.mainnosotros .nosotros .historia, .mainnosotros .nosotros .parrafo1, .mainnosotros .nosotros .parrafo2, .mainservicios .servicios .parrafoproducto, .mainservicios .servicios .parrafodiseno, .gridcontenido .hacemos, .gridcontenido .textohacemos, .gridcontenido .trabajamos, .gridcontenido .ayudarte, .gridcontenido .textoayudarte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui, .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno, .gridcontenido .hacemos, .gridcontenido .trabajamos {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+/*VARIABLES*/
 /* fonts*/
 .fonts {
   font-family: "Albert Sans", sans-serif;
@@ -11,6 +25,7 @@
   box-sizing: border-box;
 }
 
+/* INDEX*/
 .navbar .nav-media {
   gap: 3rem;
 }
@@ -22,7 +37,7 @@ body {
   margin: 0;
 }
 body .navbar-negro {
-  background-color: black;
+  background-color: #000000;
 }
 body .navbar-negro .logo {
   width: 70px;
@@ -47,7 +62,7 @@ body .navbar-negro .logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   transform: translate(-50%, -50%) rotate(-30deg);
   font-size: 20px;
   font-family: "Albert Sans", sans-serif;
@@ -73,10 +88,20 @@ body .navbar-negro .logo {
   grid-area: trece;
   margin-bottom: 15px;
   margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  gap: 2rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 700;
+  animation: marquee 12s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(-145%);
+  }
+  to {
+    transform: translateX(118%);
+  }
 }
 .gridcontenido h2 {
   font-size: 25px;
@@ -88,38 +113,14 @@ body .navbar-negro .logo {
 }
 .gridcontenido .hacemos {
   grid-area: hacemos;
-  margin-bottom: 15px;
   margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
 }
 .gridcontenido .textohacemos {
   grid-area: textohacemos;
-  margin-bottom: 15px;
   margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 .gridcontenido .trabajamos {
   grid-area: trabajamos;
-  margin-bottom: 15px;
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
 }
 .gridcontenido .imagenesquema {
   grid-area: esquema;
@@ -128,23 +129,12 @@ body .navbar-negro .logo {
 }
 .gridcontenido .ayudarte {
   grid-area: ayudarte;
-  margin-bottom: 15px;
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  border-bottom: 0px solid black;
   padding-bottom: 8px;
   margin-bottom: 16px;
   width: fit-content;
 }
 .gridcontenido .textoayudarte {
   grid-area: textoayudarte;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 footer .sinpuntos2 {
@@ -155,7 +145,7 @@ footer .sinpuntos2 {
   list-style-type: none;
   padding: 20px;
   margin: 0;
-  background-color: black;
+  background-color: #000000;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
@@ -184,7 +174,7 @@ footer .sinpuntos2 .imagenlink {
   height: 40px;
 }
 footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
-  color: white;
+  color: #ffffff;
   font-family: "Albert Sans", sans-serif;
   font-size: 14px;
   text-align: center;
@@ -213,7 +203,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   width: fit-content;
 }
 .mainservicios .servicios .nuestroservicios {
@@ -237,11 +227,6 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   justify-content: left;
   height: 50%;
   margin-top: 24px;
-  margin-bottom: -10px;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
 }
 .mainservicios .servicios .imagenmoda {
   grid-area: imagenmoda;
@@ -258,11 +243,6 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   display: flex;
   text-align: center;
   justify-content: right;
-  margin-bottom: -10px;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
   margin-left: auto;
 }
 .mainservicios .servicios .imagenproducto {
@@ -270,31 +250,18 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
 }
 .mainservicios .servicios .parrafoproducto {
   grid-area: parrafoproducto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 .mainservicios .servicios .diseno {
   grid-area: diseno;
   display: flex;
   text-align: center;
   justify-content: left;
-  margin-bottom: -10px;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
 }
 .mainservicios .servicios .imagendiseño {
   grid-area: imagendiseno;
 }
 .mainservicios .servicios .parrafodiseno {
   grid-area: parrafodiseno;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 /* NOSOTROS*/
@@ -318,26 +285,14 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
 }
 .mainnosotros .nosotros .historia {
   grid-area: historia;
-  display: flex;
-  text-align: center;
-  justify-content: left;
   height: 50%;
   margin-top: 24px;
-  margin-bottom: -24px;
-  border-bottom: 1px solid black;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  width: fit-content;
 }
 .mainnosotros .nosotros .imagenlogo {
   grid-area: imagenlogo;
 }
 .mainnosotros .nosotros .parrafo1 {
   grid-area: parrafo1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 .mainnosotros .nosotros .aqui {
   grid-area: aqui;
@@ -345,10 +300,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   text-align: center;
   justify-content: flex-end;
   height: 50%;
-  border-bottom: 1px solid black;
   padding-bottom: 18px;
-  margin-bottom: 16px;
-  width: fit-content;
   margin-left: auto;
 }
 .mainnosotros .nosotros .imagennere {
@@ -357,10 +309,6 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
 }
 .mainnosotros .nosotros .parrafo2 {
   grid-area: parrafo2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 /* CONTACTANOS*/
@@ -385,7 +333,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000000;
   width: fit-content;
 }
 .maincontactanos .cardcontainer .logocontactanos {
@@ -456,8 +404,16 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   .gridcontenido .trecestudio {
     grid-area: trece;
   }
+  @keyframes marquee {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(105%);
+    }
+  }
   .gridcontenido .hacemos {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -468,7 +424,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
     grid-area: textohacemos;
   }
   .gridcontenido .trabajamos {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -478,7 +434,7 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
     grid-area: esquema;
   }
   .gridcontenido .ayudarte {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -570,7 +526,7 @@ footer .sinpuntos2 .texto2 {
   }
   .mainservicios .servicios .nuestros1 {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -612,7 +568,7 @@ footer .sinpuntos2 .texto2 {
   .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -631,7 +587,7 @@ footer .sinpuntos2 .texto2 {
   }
   .mainservicios .servicios .nuestros1 {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 50%;
@@ -673,7 +629,7 @@ footer .sinpuntos2 .texto2 {
   .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 20px;
     width: 50%;
@@ -714,7 +670,7 @@ footer .sinpuntos2 .texto2 {
   .mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 40px;
     width: 100%;
@@ -754,7 +710,7 @@ footer .sinpuntos2 .texto2 {
   .mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 40px;
     width: 50%;
@@ -780,7 +736,7 @@ footer .sinpuntos2 .texto2 {
   .maincontactanos .cardcontainer .colaborar .colaborar1 {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
@@ -817,7 +773,7 @@ footer .sinpuntos2 .texto2 {
   .maincontactanos .cardcontainer .colaborar .colaborar1 {
     display: block;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 50%;

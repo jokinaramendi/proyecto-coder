@@ -1,4 +1,6 @@
-/* INDEX*/
+/*VARIABLES*/
+@use './variables' as *;
+@use './extends' as *;
 /* fonts*/
 .fonts{
 font-family: "Albert Sans", sans-serif;
@@ -8,6 +10,7 @@ font-family: "Albert Sans", sans-serif;
    padding: 0;
    box-sizing: border-box;
 } 
+/* INDEX*/
  .navbar {
    .nav-media {
     gap: 3rem;
@@ -20,7 +23,7 @@ body{
   flex-direction: column;
   margin: 0;
   .navbar-negro{
-    background-color: black;
+    background-color: $color-negro ;
     .logo{width: 70px;height: 70px;}
 }
 }
@@ -39,7 +42,7 @@ body{
         position: absolute;
         top: 50%;
         left: 50%;
-        color: rgb(255, 255, 255);
+        color: $color-blanco;
         transform: translate(-50%,-50%) rotate(-30deg); 
         font-size: 20px;
         font-family: "Albert Sans", sans-serif;
@@ -69,11 +72,23 @@ body{
      grid-area: trece;
      margin-bottom: 15px;
      margin-top: 8px;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%;
+     display: inline-block;
+     white-space: nowrap;     
+     gap: 2rem;     
+     font-size: clamp(2rem, 5vw, 4rem);
+     font-weight: 700;
+     animation: marquee 12s linear infinite;
+     
     }
+   @keyframes marquee {
+  from {
+    transform: translateX(-145%) ;
+  }
+  to {
+    transform: translateX(118%) ;
+  }
+}
+
     h2{
      font-size: 25px;
     }
@@ -84,38 +99,19 @@ body{
     }
     .hacemos{
      grid-area: hacemos;
-     margin-bottom: 15px;
+     @extend %centrado-flex;
+     @extend %titulos-ext;
      margin-top: 8px;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%;
-     border-bottom: 1px solid black;  
-     padding-bottom: 8px;            
-     margin-bottom: 16px;             
-     width: fit-content; 
      }
     .textohacemos{
      grid-area: textohacemos;
-     margin-bottom: 15px;
      margin-top: 8px;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%;
+     @extend %centrado-flex;
      }
     .trabajamos{
      grid-area: trabajamos;
-     margin-bottom: 15px;
-     margin-top: 8px;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%;
-     border-bottom: 1px solid black;
-     padding-bottom: 8px;
-     margin-bottom: 16px;
-     width: fit-content; 
+     @extend %centrado-flex;
+     @extend %titulos-ext;
      }
     .imagenesquema{
     grid-area: esquema;
@@ -124,23 +120,14 @@ body{
      }
     .ayudarte{
      grid-area: ayudarte;
-     margin-bottom: 15px;
-     margin-top: 8px;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%; 
-     border-bottom: 0px solid black;
+     @extend %centrado-flex;
      padding-bottom: 8px;
      margin-bottom: 16px;
      width: fit-content; 
     }
     .textoayudarte{
      grid-area: textoayudarte;
-     display: flex;
-     align-items: center; 
-     justify-content: center; 
-     height: 100%;
+     @extend %centrado-flex;
      }
 
 }
@@ -155,7 +142,7 @@ footer{
       list-style-type: none;
       padding: 20px;
       margin: 0;
-      background-color: black;
+      background-color: $color-negro;
       justify-content: center;
       align-items: center;
       margin-bottom: 0;
@@ -177,7 +164,7 @@ footer{
             }
      /* crear una funcion con esto*/
         .textofooter, .textofooter2 {
-         color: white;
+         color: $color-blanco;
          font-family: "Albert Sans", sans-serif;
          font-size: 14px;
          text-align: center;

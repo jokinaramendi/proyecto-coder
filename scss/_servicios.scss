@@ -1,3 +1,5 @@
+@use './variables' as *;
+@use './extends' as *;
 /* SERVICIOS*/
 .mainservicios{
     .servicios{
@@ -27,7 +29,7 @@
              align-items: center;
              justify-content: center;
              margin-top: 10px;
-             border-bottom: 1px solid black;
+             border-bottom: 1px solid $color-negro;
              width: fit-content;
             }
         }
@@ -52,11 +54,7 @@
          justify-content: left; 
          height: 50%;
          margin-top: 24px;
-         margin-bottom: -10px;
-         border-bottom: 1px solid black;
-         padding-bottom: 8px;
-         margin-bottom: 16px;
-         width: fit-content; 
+         @extend %titulos-ext;
         }
         .imagenmoda{
          grid-area: imagenmoda;
@@ -73,11 +71,7 @@
          display: flex;
          text-align: center;
          justify-content: right;
-         margin-bottom: -10px;
-         border-bottom: 1px solid black;
-         padding-bottom: 8px;
-         margin-bottom: 16px;
-         width: fit-content; 
+         @extend %titulos-ext;
          margin-left: auto;
         }
         .imagenproducto{
@@ -85,31 +79,21 @@
         }
         .parrafoproducto{
          grid-area: parrafoproducto;
-         display: flex;
-         align-items: center; 
-         justify-content: center; 
-         height: 100%;
+         @extend %centrado-flex;
         }
         .diseno{
          grid-area: diseno;
          display: flex;
          text-align: center;
          justify-content: left; 
-         margin-bottom: -10px;
-         border-bottom: 1px solid black;
-         padding-bottom: 8px;
-         margin-bottom: 16px;
-         width: fit-content; 
+         @extend %titulos-ext; 
         }
         .imagendiseño{
          grid-area: imagendiseno;
         }
         .parrafodiseno{
          grid-area: parrafodiseno;
-         display: flex;
-         align-items: center; 
-         justify-content: center; 
-         height: 100%;
+         @extend %centrado-flex;
         }
 
     }

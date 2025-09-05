@@ -1,3 +1,4 @@
+@use './variables' as *;
 /* INDEX MEDIA*/
 @media(max-width:768px){
 .navbar{
@@ -34,9 +35,17 @@
     margin: 0 auto 20px auto;
         .trecestudio{
             grid-area: trece ;
+                @keyframes marquee {
+                    from {
+                        transform: translateX(-90%) ;
+                    }
+                    to {
+                        transform: translateX(105%) ;
+                    }
+                }
         }
         .hacemos{
-         border-bottom: 1px solid black;
+         border-bottom: 1px solid $color-negro;
          padding-bottom: 8px;
          margin-bottom: 16px;
          width: 100%; 
@@ -47,7 +56,7 @@
             grid-area: textohacemos;
         }
         .trabajamos{ 
-         border-bottom: 1px solid black;
+         border-bottom: 1px solid $color-negro;
          padding-bottom: 8px;
          margin-bottom: 16px;
          width: 100%; 
@@ -57,7 +66,7 @@
             grid-area: esquema;
         }
         .ayudarte{
-         border-bottom: 1px solid black;
+         border-bottom: 1px solid $color-negro;
          padding-bottom: 8px;
          margin-bottom: 16px;
          width: 100%; 
@@ -178,7 +187,7 @@ footer{
            margin-bottom: 20px;
                 .nuestros1{
                  text-align: center ;
-                 border-bottom: 1px solid black;
+                 border-bottom: 1px solid $color-negro;
                  padding-bottom: 8px;
                  margin-bottom: 16px;
                  width: 100%;
@@ -220,7 +229,7 @@ footer{
                 .moda,.producto,.diseno{
                  display: block;
                  text-align: center ;
-                 border-bottom: 1px solid black;
+                 border-bottom: 1px solid $color-negro;
                  padding-bottom: 8px;
                  margin-bottom: 16px;
                  width: 100%;
@@ -250,7 +259,7 @@ footer{
             margin-bottom: 20px;
                 .nuestros1{
                  text-align: center ;
-                 border-bottom: 1px solid black;
+                 border-bottom: 1px solid $color-negro;
                  padding-bottom: 8px;
                  margin-bottom: 16px;
                  width: 50%;
@@ -292,7 +301,7 @@ footer{
                 .moda,.producto,.diseno{
                  display: block;
                  text-align: center ;
-                 border-bottom: 1px solid black;
+                 border-bottom: 1px solid $color-negro;
                  padding-bottom: 8px;
                  margin-bottom: 20px;
                  width: 50%;
@@ -345,7 +354,7 @@ footer{
                 .historia,.aqui{
                     display: block;
                     text-align: center ;
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid $color-negro;
                     padding-bottom: 8px;
                     margin-bottom: 40px;
                     width: 100%;
@@ -396,7 +405,7 @@ footer{
                  .historia,.aqui{
                      display: block;
                      text-align: center ;
-                     border-bottom: 1px solid black;
+                     border-bottom: 1px solid $color-negro;
                      padding-bottom: 8px;
                      margin-bottom: 40px;
                      width: 50%;
@@ -430,7 +439,7 @@ footer{
                      .colaborar1{
                          display: block;
                         text-align: center ;
-                         border-bottom: 1px solid black;
+                         border-bottom: 1px solid $color-negro;
                          padding-bottom: 8px;
                          margin-bottom: 16px;
                           width: 100%;
@@ -482,7 +491,7 @@ footer{
                      .colaborar1{
                          display: block;
                         text-align: center ;
-                         border-bottom: 1px solid black;
+                         border-bottom: 1px solid $color-negro;
                          padding-bottom: 8px;
                          margin-bottom: 16px;
                           width: 50%;
