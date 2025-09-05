@@ -406,11 +406,14 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   }
   @keyframes marquee {
     from {
-      transform: translateX(-90%);
+      transform: translateX(-95%);
     }
     to {
       transform: translateX(105%);
     }
+  }
+  .gridcontenido .trecestudio .span1, .gridcontenido .trecestudio .span2 {
+    display: none;
   }
   .gridcontenido .hacemos {
     border-bottom: 1px solid #000000;
