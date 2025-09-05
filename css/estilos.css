@@ -95,6 +95,7 @@ body .navbar-negro .logo {
   font-weight: 700;
   animation: marquee 12s linear infinite;
   overflow: hidden;
+  max-width: 100%;
 }
 @keyframes marquee {
   from {
