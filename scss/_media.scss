@@ -36,6 +36,9 @@ html, body { overflow-x: hidden;
     margin: 0 auto 20px auto;
         .trecestudio{
             grid-area: trece ;
+            .span1{
+                display: none;
+            }
             @keyframes marquee {
   from {
     transform: translateX(-100%) ;
@@ -43,12 +46,9 @@ html, body { overflow-x: hidden;
   to {
     transform: translateX(105%) ;
   }
+
 }
-               /*animation: none; 
-               text-align: center;
-                .span1{
-                    display: none;
-                }*/
+
                 
         }
         .hacemos{
@@ -135,22 +135,13 @@ footer{
         }
     }
 }
-  .lugarimagen1{
+ .mainhome{
+    .lugarimagen1{
         h3{
             font-size: 15px;
         }
-  }
-  /*.gridcontenido{
-    .trecestudio{
-       animation: none; 
-       text-align: center;
-                .span1{
-                    display: none;
-                }
-       
-       }
-
-  }*/
+    }
+}
   
   footer{
     .sinpuntos2{

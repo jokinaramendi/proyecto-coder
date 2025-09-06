@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.mainnosotros .nosotros .historia, .mainnosotros .nosotros .parrafo1, .mainnosotros .nosotros .parrafo2, .mainservicios .servicios .parrafoproducto, .mainservicios .servicios .parrafodiseno, .gridcontenido .hacemos, .gridcontenido .textohacemos, .gridcontenido .trabajamos, .gridcontenido .ayudarte, .gridcontenido .textoayudarte {
+.mainnosotros .nosotros .historia, .mainnosotros .nosotros .parrafo1, .mainnosotros .nosotros .parrafo2, .mainservicios .servicios .parrafoproducto, .mainservicios .servicios .parrafodiseno, html .gridcontenido .hacemos, html .gridcontenido .textohacemos, html .gridcontenido .trabajamos, html .gridcontenido .ayudarte, html .gridcontenido .textoayudarte {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 
-.mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui, .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno, .gridcontenido .hacemos, .gridcontenido .trabajamos {
+.mainnosotros .nosotros .historia, .mainnosotros .nosotros .aqui, .mainservicios .servicios .moda, .mainservicios .servicios .producto, .mainservicios .servicios .diseno, html .gridcontenido .hacemos, html .gridcontenido .trabajamos {
   border-bottom: 1px solid #000000;
   padding-bottom: 8px;
   margin-bottom: 16px;
@@ -30,39 +30,38 @@
   gap: 3rem;
 }
 
-html, body {
+html {
   overflow-x: hidden;
 }
-
-body {
+html body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0;
+  overflow-x: hidden;
 }
-body .navbar-negro {
+html body .navbar-negro {
   background-color: #000000;
 }
-body .navbar-negro .logo {
+html body .navbar-negro .logo {
   width: 70px;
   height: 70px;
 }
-
-.lugarimagen1 {
+html .lugarimagen1 {
   display: grid;
   grid-template-columns: auto auto;
   position: relative;
   width: fit-content;
 }
-.lugarimagen1 .imagen1 {
+html .lugarimagen1 .imagen1 {
   width: 100%;
   height: 100%;
 }
-.lugarimagen1 .imagen2 {
+html .lugarimagen1 .imagen2 {
   width: 100%;
   height: 100%;
 }
-.lugarimagen1 h3 {
+html .lugarimagen1 h3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -75,8 +74,7 @@ body .navbar-negro .logo {
   font-style: normal;
   text-align: center;
 }
-
-.gridcontenido {
+html .gridcontenido {
   display: grid;
   grid-template-areas: "trece trece" "hacemos textohacemos" "trabajamos esquema" "ayudarte textoayudarte";
   grid-template-columns: 1fr 1fr;
@@ -88,7 +86,7 @@ body .navbar-negro .logo {
   max-width: 1200px;
   margin: 0 auto 20px auto;
 }
-.gridcontenido .trecestudio {
+html .gridcontenido .trecestudio {
   grid-area: trece;
   margin-bottom: 15px;
   margin-top: 8px;
@@ -109,37 +107,37 @@ body .navbar-negro .logo {
     transform: translateX(118%);
   }
 }
-.gridcontenido h2 {
+html .gridcontenido h2 {
   font-size: 25px;
 }
-.gridcontenido img {
+html .gridcontenido img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.gridcontenido .hacemos {
+html .gridcontenido .hacemos {
   grid-area: hacemos;
   margin-top: 8px;
 }
-.gridcontenido .textohacemos {
+html .gridcontenido .textohacemos {
   grid-area: textohacemos;
   margin-top: 8px;
 }
-.gridcontenido .trabajamos {
+html .gridcontenido .trabajamos {
   grid-area: trabajamos;
 }
-.gridcontenido .imagenesquema {
+html .gridcontenido .imagenesquema {
   grid-area: esquema;
   margin-bottom: 15px;
   margin-top: 15px;
 }
-.gridcontenido .ayudarte {
+html .gridcontenido .ayudarte {
   grid-area: ayudarte;
   padding-bottom: 8px;
   margin-bottom: 16px;
   width: fit-content;
 }
-.gridcontenido .textoayudarte {
+html .gridcontenido .textoayudarte {
   grid-area: textoayudarte;
 }
 
@@ -412,11 +410,9 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
   }
   html .gridcontenido .trecestudio, body .gridcontenido .trecestudio {
     grid-area: trece;
-    /*animation: none; 
-    text-align: center;
-     .span1{
-         display: none;
-     }*/
+  }
+  html .gridcontenido .trecestudio .span1, body .gridcontenido .trecestudio .span1 {
+    display: none;
   }
   @keyframes marquee {
     from {
@@ -498,20 +494,9 @@ footer .sinpuntos2 .texto2 {
     margin-bottom: 0;
     line-height: 2.5;
   }
-  .lugarimagen1 h3 {
+  .mainhome .lugarimagen1 h3 {
     font-size: 15px;
   }
-  /*.gridcontenido{
-    .trecestudio{
-       animation: none; 
-       text-align: center;
-                .span1{
-                    display: none;
-                }
-
-       }
-
-  }*/
   footer .sinpuntos2 {
     grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";
     grid-template-columns: 1fr 1fr 1fr 1fr;
