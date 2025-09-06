@@ -30,6 +30,10 @@
   gap: 3rem;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -90,19 +94,19 @@ body .navbar-negro .logo {
   margin-top: 8px;
   display: inline-block;
   white-space: nowrap;
-  gap: 2rem;
+  gap: 0;
   font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 700;
+  font-weight: 600;
   animation: marquee 12s linear infinite;
   overflow: hidden;
   max-width: 100%;
 }
 @keyframes marquee {
   from {
-    transform: translateX(-145%);
+    transform: translateX(-100%);
   }
   to {
-    transform: translateX(118%);
+    transform: translateX(107%);
   }
 }
 .gridcontenido h2 {
@@ -390,10 +394,13 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
     margin-bottom: 0;
     line-height: 2.5;
   }
-  .imagen1 {
+  html, body {
+    overflow-x: hidden;
+  }
+  html .imagen1, body .imagen1 {
     display: none;
   }
-  .gridcontenido {
+  html .gridcontenido, body .gridcontenido {
     grid-template-areas: "imagen2" "trece " "hacemos" "textohacemos" "trabajamos" "esquema" "ayudarte" "textoayudarte";
     grid-template-columns: 1fr;
     padding-left: 5%;
@@ -403,15 +410,23 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
     gap: 20px;
     margin: 0 auto 20px auto;
   }
-  .gridcontenido .trecestudio {
+  html .gridcontenido .trecestudio, body .gridcontenido .trecestudio {
     grid-area: trece;
-    animation: none;
+    /*animation: none; 
     text-align: center;
+     .span1{
+         display: none;
+     }*/
   }
-  .gridcontenido .trecestudio .span1 {
-    display: none;
+  @keyframes marquee {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(105%);
+    }
   }
-  .gridcontenido .hacemos {
+  html .gridcontenido .hacemos, body .gridcontenido .hacemos {
     border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
@@ -419,30 +434,30 @@ footer .sinpuntos2 .textofooter, footer .sinpuntos2 .textofooter2 {
     text-align: center;
     grid-area: hacemos;
   }
-  .gridcontenido .textohacemos {
+  html .gridcontenido .textohacemos, body .gridcontenido .textohacemos {
     grid-area: textohacemos;
   }
-  .gridcontenido .trabajamos {
+  html .gridcontenido .trabajamos, body .gridcontenido .trabajamos {
     border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
     grid-area: trabajamos;
   }
-  .gridcontenido .imagenesquema {
+  html .gridcontenido .imagenesquema, body .gridcontenido .imagenesquema {
     grid-area: esquema;
   }
-  .gridcontenido .ayudarte {
+  html .gridcontenido .ayudarte, body .gridcontenido .ayudarte {
     border-bottom: 1px solid #000000;
     padding-bottom: 8px;
     margin-bottom: 16px;
     width: 100%;
     grid-area: ayudarte;
   }
-  .gridcontenido .textoayudarte {
+  html .gridcontenido .textoayudarte, body .gridcontenido .textoayudarte {
     grid-area: textoayudarte;
   }
-  .gridcontenido p {
+  html .gridcontenido p, body .gridcontenido p {
     text-align: center;
   }
 }
@@ -486,13 +501,17 @@ footer .sinpuntos2 .texto2 {
   .lugarimagen1 h3 {
     font-size: 15px;
   }
-  .gridcontenido .trecestudio {
-    animation: none;
-    text-align: center;
-  }
-  .gridcontenido .trecestudio .span1 {
-    display: none;
-  }
+  /*.gridcontenido{
+    .trecestudio{
+       animation: none; 
+       text-align: center;
+                .span1{
+                    display: none;
+                }
+
+       }
+
+  }*/
   footer .sinpuntos2 {
     grid-template-areas: "instagram youtube whatsapp gmail" "texto1 texto1 texto2 texto2";
     grid-template-columns: 1fr 1fr 1fr 1fr;

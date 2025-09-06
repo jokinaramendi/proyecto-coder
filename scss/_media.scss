@@ -14,6 +14,7 @@
     }
     }
 }
+html, body { overflow-x: hidden;
     .imagen1{ display: none;}
     .gridcontenido{
         grid-template-areas: 
@@ -35,11 +36,19 @@
     margin: 0 auto 20px auto;
         .trecestudio{
             grid-area: trece ;
-               animation: none; 
+            @keyframes marquee {
+  from {
+    transform: translateX(-100%) ;
+  }
+  to {
+    transform: translateX(105%) ;
+  }
+}
+               /*animation: none; 
                text-align: center;
                 .span1{
                     display: none;
-                }
+                }*/
                 
         }
         .hacemos{
@@ -79,6 +88,7 @@
   }
   
 }
+ }
 
 footer{
     .sinpuntos2{
@@ -130,7 +140,7 @@ footer{
             font-size: 15px;
         }
   }
-  .gridcontenido{
+  /*.gridcontenido{
     .trecestudio{
        animation: none; 
        text-align: center;
@@ -140,7 +150,7 @@ footer{
        
        }
 
-  }
+  }*/
   
   footer{
     .sinpuntos2{
