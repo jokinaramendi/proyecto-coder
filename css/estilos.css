@@ -106,7 +106,7 @@ body .navbar-negro .logo {
     transform: translateX(-100%);
   }
   to {
-    transform: translateX(107%);
+    transform: translateX(110%);
   }
 }
 .gridcontenido h2 {
