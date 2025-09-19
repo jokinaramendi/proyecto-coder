@@ -3,6 +3,7 @@
 /* CONTACTANOS*/
 .maincontactanos{
     .cardcontainer{
+        
      display: grid;
      grid-template-areas:
      "colaborar colaborar img"
@@ -34,6 +35,7 @@
          grid-area: img;
          width: 100%;
          height: 100%;
+
         } 
         .card { margin: 0; }
         .card1{

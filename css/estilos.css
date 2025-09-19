@@ -802,5 +802,43 @@ footer .sinpuntos2 .texto2 {
     display: none;
   }
 }
+/*imagentrece*/
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .maincontactanos .cardcontainer {
+    grid-template-areas: "colaborar colaborar" "card1 card1" "card2 card3";
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .maincontactanos .cardcontainer .colaborar {
+    grid-area: colaborar;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  .maincontactanos .cardcontainer .colaborar .colaborar1 {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    width: 50%;
+    margin: 20px auto 46px;
+  }
+  .maincontactanos .cardcontainer .card1 {
+    grid-area: card1;
+  }
+  .maincontactanos .cardcontainer .card2 {
+    grid-area: card2;
+  }
+  .maincontactanos .cardcontainer .card3 {
+    grid-area: card3;
+  }
+  .maincontactanos .cardcontainer .logocontactanos {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
